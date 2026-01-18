@@ -1,0 +1,53 @@
+/* DSFR lite (minimum pour ton bloc) */
+.fr-label { display:block; font-weight:600; margin:10px 0 6px; }
+.fr-input-wrap { width:100%; }
+.fr-input {
+  width:100%;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#0f1320;
+  color:var(--text);
+}
+
+.fr-messages-group { margin-top:10px; }
+.fr-message { margin:6px 0; color:var(--muted); font-size:0.95rem; }
+.fr-message--error { color: #ef4444; }
+.fr-message--valid { color: #22c55e; }
+
+.fr-checkbox-group { margin-top:10px; display:flex; align-items:center; gap:10px; }
+.fr-checkbox-group--sm input[type="checkbox"] { transform: scale(1.0); }
+
+.fr-input-wrap--icon { position: relative; }
+
+.pw-toggle{
+  position:absolute;
+  top:50%;
+  right:10px;
+  transform: translateY(-50%);
+  border:0;
+  background:transparent;
+  padding:6px;
+  border-radius:10px;
+  cursor:pointer;
+  color: var(--muted);
+}
+
+.pw-toggle:hover { outline:1px solid var(--line); }
+
+.pw-toggle__icon{
+  width:18px;
+  height:18px;
+  display:block;
+  fill: currentColor;
+}
+
+.pw-toggle__icon--off{ display:none; }
+
+.pw-toggle.is-on .pw-toggle__icon{ display:none; }
+.pw-toggle.is-on .pw-toggle__icon--off{ display:block; }
+
+/* Laisse la place à l’icône */
+.fr-input-wrap--icon .fr-input{
+  padding-right:44px;
+}
