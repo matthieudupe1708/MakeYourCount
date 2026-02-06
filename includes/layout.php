@@ -10,6 +10,7 @@ function render_header(string $title): void {
     echo '<!DOCTYPE html><html lang="'.e($lang).'"><head>';
     echo '<meta charset="utf-8">';
     echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
+    echo '<link rel="icon" type="image/png" href="../../../assets/img/makeyourcount.png">';
     echo '<title>'.e($title).'</title>';
     echo '<link rel="stylesheet" href="assets/style.css">';
     echo '<link rel="stylesheet" href="assets/dsfr-lite.css">';
